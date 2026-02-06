@@ -16,6 +16,24 @@
         background-color: #554e47;
         background-repeat: no-repeat;
         background-size: 100% auto;
+        display: none;
+      }
+      .hero-mobile {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("images/Imakeyoubasti_mobile.jpg");
+        background-color: #554e47;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+
+      @media (min-width: 575px) {
+        .hero {
+          display: block;
+        }
+        .hero-mobile {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -23,3 +41,4 @@
 </html>
 
 <div class="hero"></div>
+<div class="hero-mobile"></div>
